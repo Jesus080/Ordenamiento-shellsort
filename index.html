@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ordenamiento por Shell Sort</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>~Ordenamiento por Shell Sort~</h2>
+        <div class="form-container">
+            <label for="inputArray">Ingrese números separados por comas:</label>
+            <input type="text" id="inputArray" placeholder="Ejemplo: 5,2,8,1,3">
+
+            <label for="orderDirection">Seleccione la dirección de ordenamiento:</label>
+            <select id="orderDirection">
+                <option value="noSelec">Seleccione Orden</option>
+                <option value="asc">Ascendente</option>
+                <option value="desc">Descendente</option>
+            </select>
+
+            <button onclick="shellSort()">Ordenar</button>
+        </div>
+
+        <p id="result"></p>
+    </div>
+    
+    <script src="js/shellsort.js"></script>
+</body>
+</html>
+
